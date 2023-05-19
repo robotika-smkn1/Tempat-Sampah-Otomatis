@@ -38,7 +38,7 @@ To keep this collection up-to-date need contributors who can add more Program Ar
 # :mag: Ilustrasi Arduino
 
 <p align="center">
-  <img src="https://i.postimg.cc/CMZVG8c7/cietj.webp" style="height:205px;" "width:205px;"/>
+  <img src="https://i.postimg.cc/QC73yzwb/Screenshot-2023-05-19-163502.jpg" style="height:205px;" "width:205px;"/>
 </p>
 
 
