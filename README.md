@@ -40,11 +40,8 @@ To keep this collection up-to-date need contributors who can add more Program Ar
 # :mag: Ilustrasi Arduino
 
 <p align="center">
-  <img src="https://i.postimg.cc/QC73yzwb/Screenshot-2023-05-19-163502.jpg" style="height:205px;" "width:205px;"/>
+  <img src="https://i.postimg.cc/qBXmvgWr/Untitled-1.png" style="height:205px;" "width:205px;"/>
 </p>
-
-
-# :inbox_tray: Download Libary [ AFmotor ](https://drive.google.com/file/d/1lWQe0IQlVc9-mDP6qdFGbbAMht38LXMc/view?usp=share_link) 
 
 
 # :clipboard: Source Code By Robotika SMKN 1
