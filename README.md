@@ -32,7 +32,9 @@ To keep this collection up-to-date need contributors who can add more Program Ar
 
 # :briefcase: Barang & Bahan
 - Arduino Uno
-- 
+- Kabel Male & Female
+- Servo Sg/Mg
+- Sensor Ultra Sonic ( Hc-sr04 )
 
 
 # :mag: Ilustrasi Arduino
