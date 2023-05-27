@@ -40,7 +40,7 @@ To keep this collection up-to-date need contributors who can add more Program Ar
 # :mag: Ilustrasi Arduino
 
 <p align="center">
-  <img src="https://i.postimg.cc/qBXmvgWr/Untitled-1.png" style="height:205px;" "width:205px;"/>
+  <img src="####" style="height:205px;" "width:205px;"/>
 </p>
 
 
