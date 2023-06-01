@@ -157,7 +157,7 @@ void loop() {
  * Created by Robotika smkn1 kotabekasi
  * 
  */
- 
+
  
 #include <Servo.h>
 #include <Wire.h>
@@ -192,7 +192,7 @@ void setup() {
   digitalWrite(redLedPin, LOW);
 
   // Inisialisasi LCD
-  lcd.begin(); // Inisialisasi LCD dengan ukuran 16 kolom dan 2 baris
+  lcd.begin(); //
   lcd.backlight();
   lcd.setCursor(0, 0);
   lcd.print("ROBOTIKA SMKN 1");
@@ -213,13 +213,13 @@ void loop() {
     if (digitalRead(redLedPin) == LOW) { // Cek jika sampah tidak penuh
       myservo.write(180); // Gerakkan servo ke posisi tertentu
       digitalWrite(buzzerPin, HIGH); // Nyalakan buzzer
-      delay(90); // Delay 200 ms
+      delay(90); // Delay 90 ms
       digitalWrite(buzzerPin, LOW); // Matikan buzzer
-      delay(90); // Delay 200 ms
+      delay(90); // Delay 90 ms
       digitalWrite(buzzerPin, HIGH); // Nyalakan buzzer
-      delay(90); // Delay 200 ms
+      delay(90); // Delay 90 ms
       digitalWrite(buzzerPin, LOW); // Matikan buzzer
-      delay(200); // Delay 600 ms
+      delay(200); // Delay 200 ms
     }
   } else {
     myservo.write(0); // Kembali ke posisi awal
@@ -236,7 +236,7 @@ void loop() {
   duration2 = pulseIn(echoPin2, HIGH);
   distance2 = duration2 * 0.034 / 2;
 
-  if (distance2 < 10) { // Jarak pendeteksian jika sampah penuh
+  if (distance2 < 5) { // Jarak pendeteksian jika sampah penuh
     digitalWrite(greenLedPin, LOW); // Matikan LED Hijau
     digitalWrite(redLedPin, HIGH); // Nyalakan LED Merah
     myservo.write(0); // Kembali ke posisi awal
@@ -250,7 +250,7 @@ void loop() {
     lcd.print("Sampah Kosong   "); // Menampilkan teks "Sampah Kosong" pada LCD
   }
 
-  delay(5); // Delay 1 detik
+  delay(1); // 1 Micro Seccond
 }
 
 ```
