@@ -142,8 +142,9 @@ void loop() {
   delay(5); // Delay 1 detik
 }
 
-``
-`
+```
+
+
 
 # :clipboard: Source Code Menggunakan LCD-i2C By Robotika SMKN 1
 ```bash
