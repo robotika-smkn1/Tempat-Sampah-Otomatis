@@ -98,9 +98,17 @@ void loop() {
   distance1 = duration1 * 0.034 / 2;
 
   if (distance1 < 10) { // Jarak pendeteksian jika sampah masuk
-    myservo.write(180); // Gerakkan servo ke posisi tertentu
-    digitalWrite(buzzerPin, HIGH); // Nyalakan buzzer
-    delay(1000); // Delay 1 detik
+    if (digitalRead(redLedPin) == LOW) { // Cek jika sampah tidak penuh
+      myservo.write(180); // Gerakkan servo ke posisi tertentu
+      digitalWrite(buzzerPin, HIGH); // Nyalakan buzzer
+      delay(90); // Delay 200 ms
+      digitalWrite(buzzerPin, LOW); // Matikan buzzer
+      delay(90); // Delay 200 ms
+      digitalWrite(buzzerPin, HIGH); // Nyalakan buzzer
+      delay(90); // Delay 200 ms
+      digitalWrite(buzzerPin, LOW); // Matikan buzzer
+      delay(200); // Delay 600 ms
+    }
   } else {
     myservo.write(0); // Kembali ke posisi awal
     digitalWrite(buzzerPin, LOW); // Matikan buzzer
@@ -119,13 +127,14 @@ void loop() {
   if (distance2 < 10) { // Jarak pendeteksian jika sampah penuh
     digitalWrite(greenLedPin, LOW); // Matikan LED Hijau
     digitalWrite(redLedPin, HIGH); // Nyalakan LED Merah
+    myservo.write(0); // Kembali ke posisi awal
+    digitalWrite(buzzerPin, LOW); // Matikan buzzer
   } else {
     digitalWrite(greenLedPin, HIGH); // Nyalakan LED Hijau
     digitalWrite(redLedPin, LOW); // Matikan LED Merah
   }
 
-  delay(10); // Delay 1 detik
+  delay(5); // Delay 1 detik
 }
-
 
 ```
