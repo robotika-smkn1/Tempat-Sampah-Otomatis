@@ -147,7 +147,6 @@ void loop() {
 
 
 # :clipboard: Source Code Menggunakan LCD-i2C By Robotika SMKN 1
-```bash
 
 ```bash
 /*
